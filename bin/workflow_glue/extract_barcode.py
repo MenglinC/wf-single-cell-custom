@@ -71,7 +71,7 @@ def argparser():
             alignment query (ignored with --kit=5prime).")
 
     parser.add_argument(
-        "--barcode_length", type=int, default=16,
+        "--barcode_length", type=int, default=17,
         help="Cell barcode length")
 
     parser.add_argument(
