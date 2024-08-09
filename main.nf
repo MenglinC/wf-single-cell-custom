@@ -176,6 +176,7 @@ workflow pipeline {
                 "please use --profile standard (Docker) " +
                 "or --profile singularity.")
         }
+        echo "Received chunk: ${params.chunk}"
         ref_genome_fasta = file("${params.ref_genome_dir}/fasta/genome.fa", checkIfExists: true)
         ref_genome_idx = file("${params.ref_genome_dir}/fasta/genome.fa.fai", checkIfExists: true)
         ref_genes_gtf = file("${params.ref_genome_dir}/genes/genes.gtf", checkIfExists: true)
